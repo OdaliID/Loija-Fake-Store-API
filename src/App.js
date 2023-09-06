@@ -104,7 +104,7 @@ function App() {
       </div>
       <footer className="rodape">
         <div>Loja PMW &copy; 2023 - Todos os direitos reservados.</div>
-        <div>Desenvolvido com react <img src={logo} className="App-logo" alt="logo" /></div>
+        <div>Desenvolvido com react <img src={logo} className="rodape-logo" alt="logo" /></div>
       </footer>
     </div>
   );

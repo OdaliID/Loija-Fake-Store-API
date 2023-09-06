@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
+import logo from './logo.svg';
 
 function formatarPreco(valor) {
   if (valor != null) {
@@ -58,7 +59,7 @@ function App() {
     <div className="App">
       <header className="cabecalho">
       <img src="./logo.png" alt="Loja PMW Logo"/>
-        <div className="marca">Loja PMW</div>
+        <div className="marca">Loja PMW </div>
       </header>
       <div className="conteudo">
         <div className="lista">
@@ -103,7 +104,7 @@ function App() {
       </div>
       <footer className="rodape">
         <div>Loja PMW &copy; 2023 - Todos os direitos reservados.</div>
-        <div>Desenvolvido com react</div>
+        <div>Desenvolvido com react <img src={logo} className="App-logo" alt="logo" /></div>
       </footer>
     </div>
   );

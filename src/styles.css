@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #303030;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #303030;
+}
+
+.cabecalho {
+  background-color: #007acc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.cabecalho img{
+  max-width: 100px;
+}
+
+.marca {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.conteudo {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lista {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lista-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lista-cabecalho h1 {
+  font-size: 24px;
+}
+
+.lista-produtos {
+  list-style: none;
+}
+
+.lista-produtos li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.lista-produtos li:hover {
+  transform: scale(1.02);
+}
+
+.produto-imagem {
+  width: 100px; /* Defina o tamanho desejado */
+  height: 100px; /* Defina o tamanho desejado */
+  object-fit: cover; /* Isso ajuda a manter a proporção da imagem */
+  margin-right: 10px; /* Espaço entre as imagens */
+}
+
+.produto-item {
+  display: inline-block; /* Exibir os produtos em linha */
+  width: calc(33.33% - 20px); /* Defina a largura desejada para cada produto com um espaço entre eles */
+  margin-right: 20px; /* Espaço entre os produtos */
+  vertical-align: top; /* Espaço entre os itens da lista */
+}
+
+.titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.preco {
+  font-size: 16px;
+  color: #007acc;
+}
+
+.comprar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comprar button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.comprar button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.remover-produto{
+  background-color: #f00524;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.carrinho-container {
+  max-height: 400px; /* Altura máxima do carrinho */
+  overflow-y: auto;
+}
+
+.carrinho {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrinho {
+  list-style: none;
+}
+
+#lista-carrinho li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+#lista-carrinho li:last-child {
+  margin-bottom: 0;
+}
+
+#carrinho-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.rodape {
+  color: gray;
+  padding: 20px;
+  background-color: rgba(238, 232, 232, 0);
+  text-align: center;
+}

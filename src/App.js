@@ -59,7 +59,7 @@ function App() {
     <div className="App">
       <header className="cabecalho">
       <img src="./logo.png" alt="Loja PMW Logo"/>
-        <div className="marca">Loja PMW </div>
+        <div className="marca">Varejo PMW</div>
       </header>
       <div className="conteudo">
         <div className="lista">

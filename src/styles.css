@@ -41,7 +41,7 @@ body {
 }
 
 .lista {
-  width: 65%;
+  width: 67%;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -57,6 +57,7 @@ body {
 
 .lista-cabecalho h1 {
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .lista-produtos {
@@ -81,6 +82,7 @@ body {
   height: 100px;
   object-fit: cover;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .produto-item {

@@ -77,17 +77,17 @@ body {
 }
 
 .produto-imagem {
-  width: 100px; /* Defina o tamanho desejado */
-  height: 100px; /* Defina o tamanho desejado */
-  object-fit: cover; /* Isso ajuda a manter a proporção da imagem */
-  margin-right: 10px; /* Espaço entre as imagens */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 .produto-item {
-  display: inline-block; /* Exibir os produtos em linha */
-  width: calc(33.33% - 20px); /* Defina a largura desejada para cada produto com um espaço entre eles */
-  margin-right: 20px; /* Espaço entre os produtos */
-  vertical-align: top; /* Espaço entre os itens da lista */
+  display: inline-block;
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+  vertical-align: top;
 }
 
 .titulo {
@@ -131,7 +131,7 @@ body {
 }
 
 .carrinho-container {
-  max-height: 400px; /* Altura máxima do carrinho */
+  max-height: 400px;
   overflow-y: auto;
 }
 

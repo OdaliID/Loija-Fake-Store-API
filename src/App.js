@@ -83,7 +83,6 @@ function App() {
         </div>
         <div className="carrinho">
           <h1>Seu carrinho</h1>
-          <div className="carrinho-container"></div>
           <ul id="lista-carrinho">
             {carrinho.map((item) => (
               <li key={item.id}>
@@ -95,6 +94,12 @@ function App() {
                 <button className="remover-produto" onClick={() => removerProduto(item.id)}>Remover</button>
               </li>
             ))}
+            {carrinho.length === 0 && (
+              <li className="carrinho-vazio">
+                <div className="titulo">Seu carrinho está vazio</div>
+                <div className="mensagem">Que tal mudar essa situação? 😉</div>
+              </li>
+            )}
           </ul>
           <div id="carrinho-total">
             <div>Total</div>

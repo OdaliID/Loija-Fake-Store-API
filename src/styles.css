@@ -123,14 +123,20 @@ body {
   cursor: not-allowed;
 }
 
-.remover-produto{
-  background-color: #f00524;
+.remover-produto {
+  background-color: #ff3333;
   color: #fff;
   border: none;
   padding: 5px 10px;
-  border-radius: 3px;
   cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
 }
+
+.remover-produto:hover {
+  background-color: #ff0000;
+}
+
 
 .carrinho-container {
   max-height: 400px;
@@ -195,4 +201,32 @@ body {
   .rodape-logo {
     animation: rodape-logo-spin infinite 20s linear;
   }
+}
+
+/* DetalhesProduto.css */
+
+.detalhes-produto {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.detalhes-produto img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.detalhes-produto h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.detalhes-produto p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
 }

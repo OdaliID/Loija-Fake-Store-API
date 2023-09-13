@@ -1,19 +1,18 @@
-// DetalhesProduto.js
-
 import React from "react";
-import { Card } from "antd";
+import "./styles.css"; // Importe o arquivo CSS
 
-function DetalhesProduto({ produto, onClose }) {
+function DetalhesProduto({ produto }) {
+  if (!produto) {
+    return <div>Carregando detalhes do produto...</div>;
+  }
+
   return (
     <div className="detalhes-produto">
-      <Card
-        title={produto.title}
-        extra={<button onClick={onClose}>Fechar</button>}
-      >
-        <img src={produto.image} alt={produto.title} />
-        <p>{produto.description}</p>
-        <p>Preço: {formatarPreco(produto.price)}</p>
-      </Card>
+      <h2>{produto.title}</h2>
+      <img src={produto.image} alt={produto.title} />
+      <p>Preço: {produto.price}</p>
+      <p>Categoria: {produto.category}</p>
+      <p>Descrição: {produto.description}</p>
     </div>
   );
 }

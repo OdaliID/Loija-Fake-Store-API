@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { Card, Modal, Button } from "antd";
-import logo from "./logo.svg";
+import logo from "./logo.png";
+import logoFooter from './logo.svg';
 import DetalhesProduto from "./DetalhesProduto";
 
 function formatarPreco(valor) {
@@ -137,7 +138,7 @@ function App() {
         <footer className="rodape">
           <div>Varejo PMW &copy; 2023 - Todos os direitos reservados.</div>
           <div>
-            Desenvolvido com react <img src={logo} className="rodape-logo" alt="logo" />
+            Desenvolvido com react <img src={logoFooter} className="rodape-logo" alt="logo" />
           </div>
         </footer>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css"; // Importe o arquivo CSS
+import "./styles.css";
 
 function DetalhesProduto({ produto }) {
   if (!produto) {

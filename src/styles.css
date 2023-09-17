@@ -92,6 +92,11 @@ body {
   vertical-align: top;
 }
 
+.produto-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 .titulo {
   font-size: 18px;
   font-weight: bold;
